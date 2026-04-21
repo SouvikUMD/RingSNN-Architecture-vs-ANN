@@ -31,8 +31,7 @@ The RingSNN implementation in this repository is designed for execution on Intel
 
 # Installation:
 If you plan to run the ANN baselines or preprocessing scripts, install the Python dependencies using:
-'''bash
-pip install -r requirements.txt
+```bash pip install -r requirements.txt ```
 
 ## Note:
 The requirements file does not install Intel Loihi SDKs. Loihi software must be installed separately through Intel’s NxSDK or Lava installation process, which requires access approval.
@@ -42,6 +41,7 @@ The requirements file does not install Intel Loihi SDKs. Loihi software must be 
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 pip install -r requirements.txt
+```
 
 # Summary:
 This work evaluates neuromorphic (Loihi 2) versus GPU execution for time-series forecasting tasks, focusing on:
