@@ -13,6 +13,13 @@ The project includes:
 # Intel Loihi Requirement:
 The RingSNN implementation in this repository is designed for execution on Intel Loihi neuromorphic hardware. Running the full RingSNN pipeline requires access to Loihi 1 or Loihi 2 hardware and the associated Intel NxSDK or Lava framework. CPU-only execution is supported for ANN baselines but not for the neuromorphic RingSNN backend.
 
+# Summary:
+This work evaluates neuromorphic (Loihi 2) versus GPU execution for time-series forecasting tasks, focusing on:
+- Energy efficiency
+- Accuracy tradeoffs
+- Architectural differences between SNNs and ANNs
+- Cross-dataset generalization
+
 # Repository Contents:
 - ANN Comparison
   Implementations of ANN baselines used in the study.
@@ -29,26 +36,22 @@ The RingSNN implementation in this repository is designed for execution on Intel
 - Paper PDFs
   Final submission and supplementary materials.
 
-# Installation:
-If you plan to run the ANN baselines or preprocessing scripts, install the Python dependencies using:
-```bash pip install -r requirements.txt ```
-
 ## Note:
-The requirements file does not install Intel Loihi SDKs. Loihi software must be installed separately through Intel’s NxSDK or Lava installation process, which requires access approval.
+The requirements file does not install Intel Loihi SDKs. Loihi software must be installed separately through Intel’s NxSDK or Lava installation process, which requires access approval. See  **Intel_INRC_on_LAVA_FAQs.pdf**. 
 
 ## Getting Started:
 ```bash
 git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-pip install -r requirements.txt
+cd <your-repo>  # Use Terminal/Command Prompt
 ```
+RingSNN Implementations: 
+Will require installation of Lava for Loihi Implementation. 
+For more Instructions on Installing Intel Loihi including transferring files from the Local Machine to INRC server please see **Intel_INRC_on_LAVA_FAQs.pdf**. 
+ANN Implementations: 
+As they utilize Nvidia-SMI GPU's Google Colab or an equivalent Interactive Computing Environment would be needed that is capable of handling Nvidia-SMI GPU's. 
+**For Google Colab users (Recommended): Make sure you have an active google account and that the files are mounted into your Google Drive prior to executing. Change runtime type to T4 GPU to activate Nvidia-SMI GPU.** 
+**For Other Interactive Computing Environment Users: Ensure that Nvidia SMI GPU's are available and are installed in your Interactive Computing Environment. Please delete any instances of Google Colab in the code prior to execution.**
 
-# Summary:
-This work evaluates neuromorphic (Loihi 2) versus GPU execution for time-series forecasting tasks, focusing on:
-- Energy efficiency
-- Accuracy tradeoffs
-- Architectural differences between SNNs and ANNs
-- Cross-dataset generalization
 
 License:
 MIT License.
