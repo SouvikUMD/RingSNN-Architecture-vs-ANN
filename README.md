@@ -44,10 +44,10 @@ The requirements file does not install Intel Loihi SDKs. Loihi software must be 
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>  # Use Terminal/Command Prompt
 ```
-RingSNN Implementations: 
+RingSNN Implementations: <\br>
 Will require installation of Lava for Loihi Implementation. 
 For more Instructions on Installing Intel Loihi including transferring files from the Local Machine to INRC server please see **Intel_INRC_on_LAVA_FAQs.pdf**. 
-ANN Implementations: 
+### ANN Implementations: 
 As they utilize Nvidia-SMI GPU's Google Colab or an equivalent Interactive Computing Environment would be needed that is capable of handling Nvidia-SMI GPU's. 
 **For Google Colab users (Recommended): Make sure you have an active google account and that the files are mounted into your Google Drive prior to executing. Change runtime type to T4 GPU to activate Nvidia-SMI GPU.** 
 **For Other Interactive Computing Environment Users: Ensure that Nvidia SMI GPU's are available and are installed in your Interactive Computing Environment. Please delete any instances of Google Colab in the code prior to execution.**
